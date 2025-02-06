@@ -42,14 +42,14 @@ const Timer = () => {
 
   return (
     <div className="bg-white w-full min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-black font-bold text-[13rem]">
+      <h1 className="text-black font-bold lg:text-[13rem] lg:pt-[10rem] md:pt-[5rem] pt-11 md:text-[8rem] text-7xl">
         {formatTime(timeLeft ?? 0)}
       </h1>
-      <h1 className="text-gray-800 font-normal text-7xl pt-3">
+      <h1 className="text-gray-800 font-normal lg:text-7xl md:text-5xl text-3xl pt-3">
         /{formatTime(hours * 3600 + minutes * 60 + seconds)}
       </h1>
 
-      <div className="mt-3 border border-gray-300 w-1/3 pb-8 text-center rounded-xl">
+      <div className="mt-3 border border-gray-300 lg:w-1/3 md:w-2/3 mx-4 pb-8 text-center rounded-xl">
         <div className="bg-blue-500 text-white py-2 flex justify-center items-center rounded-t-xl">
           <IoMdArrowDropdown size={14} /> Settings
         </div>
@@ -107,10 +107,10 @@ const Timer = () => {
         </button>
       </div>
       {/* Footer */}
-      <h1 className="text-gray-800 pt-[7rem] text-2xl font-medium">
+      <h1 className="text-gray-800 pt-[7rem] mx-4 text-2xl font-medium">
         Large Online Timer
       </h1>
-      <p className="text-gray-700 text-sm">
+      <p className="text-gray-700 mx-4 text-sm">
         Large timer with countdown feature. Ideal for exercise, meetings,
         meditation. More features coming soon.
       </p>
